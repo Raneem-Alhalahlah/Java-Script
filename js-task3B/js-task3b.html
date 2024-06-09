@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-task3b</title>
+    <style>
+    .color{
+background-color: blue;
+height: 200px;
+width: 200px;
+    }
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #playlist {
+        list-style-type: none;
+        padding: 0;
+    }
+    #playlist li {
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+   <!-- exercise #2 -->
+    <div class="color" id="colors"  onclick="red()"> </div>
+    <br><br><br>
+
+
+   <!-- exercise #5 -->
+   <div>
+    <label for="pin">password (min 6 characters)</label>
+    <input type="password" id="pin" name="pin" oninput="validatePin()">
+    <span id="pinError" style="color: red; display: none;">Too short</span>
+   </div>
+<br>
+    <div>
+    <label for="confirmPin">Repeat password :</label>
+    <input type="password" id="confirmPin" name="confirmPin" oninput="validateConfirmPin()">
+    <span id="confirmPinError" style="color: red; display: none;">The two passwords Not match</span>
+    </div>
+<br>
+     <button type="submit" id="submitButton" style="display: none;">Submit</button>
+
+
+    <!-- exercise #6 -->
+    <input type="text" id="songInput" placeholder="song name">
+    <button onclick="addSong()">Add Song</button>
+    
+    <ul id="playlist"></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js-task3b.js"></script>
+</body>
+</html>
